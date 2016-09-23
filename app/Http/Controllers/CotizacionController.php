@@ -6,6 +6,9 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Cotization;
+use App\Client;
+use App\Paper;
+use App\Work;
 use Laracasts\Flash\Flash;
 
 class CotizacionController extends Controller
@@ -27,8 +30,13 @@ class CotizacionController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create()
-    {
-        //
+    {   
+        $clientes = [0 => 'Selecione'] + Client::lists('nombrecomercial','id')->all();
+        $trabajos = [0 => 'Selecione'] + Work::lists('trabajo','id_trabajo')->all();
+        $papeles = [0 => 'Selecione'] + Paper::lists('papel','id_papel')->all();
+      /*$papeles = Paper::lists('papel','id_papel')->all();
+        $papeles = [0 => 'Selecione'] + $papeles;*/
+        return view('cotizacion.create',compact('clientes','trabajos','papeles'));
     }
 
     /**
