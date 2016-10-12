@@ -27,6 +27,6 @@ class CreateMl30444tDecreasesTable extends Migration
      */
     public function down()
     {
-        Schema::drop('ml_3044_4t_decreases');
+        Schema::drop('cat_mer_ml_3044_4t');
     }
 }
