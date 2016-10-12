@@ -12,7 +12,7 @@ class CreateLaminadoplastcostsTable extends Migration
      */
     public function up()
     {
-        Schema::create('laminadoplastcosts', function (Blueprint $table) {
+        Schema::create('cat_lam_plast_precio', function (Blueprint $table) {
             $table->increments('cat_lam_plast_precio');
               $table->string('descrip_lamp',100);
               $table->float('costo_lamp');

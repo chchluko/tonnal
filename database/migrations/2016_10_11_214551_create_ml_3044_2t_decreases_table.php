@@ -12,7 +12,7 @@ class CreateMl30442tDecreasesTable extends Migration
      */
     public function up()
     {
-        Schema::create('ml_3044_2t_decreases', function (Blueprint $table) {
+        Schema::create('cat_mer_ml_3044_2t', function (Blueprint $table) {
             $table->increments('id_3044_2t');
               $table->integer('pliegos_30_44');
               $table->integer('merma_30_44');
@@ -27,6 +27,6 @@ class CreateMl30442tDecreasesTable extends Migration
      */
     public function down()
     {
-        Schema::drop('ml_3044_2t_decreases');
+        Schema::drop('cat_mer_ml_3044_2t');
     }
 }
