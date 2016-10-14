@@ -28,6 +28,6 @@ class CreatePaperdiscountsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('paperdiscounts');
+        Schema::drop('cat_descuentos_papel');
     }
 }

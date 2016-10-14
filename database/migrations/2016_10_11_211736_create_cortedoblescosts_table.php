@@ -13,7 +13,7 @@ class CreateCortedoblescostsTable extends Migration
     public function up()
     {
         Schema::create('cat_corte_dobles_precio', function (Blueprint $table) {
-            $table->increments('id_corte_bobles_precio');
+            $table->increments('id_corte_dobles_precio');
               $table->float('corte_costo');
               $table->float('dobles_costo');
               $table->float('cantidad_min');
