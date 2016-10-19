@@ -13,7 +13,7 @@ class CreateStatuscotizationsTable extends Migration
     public function up()
     {
         Schema::create('estatus_cotizaciones', function (Blueprint $table) {
-            $table->increments('id_cotizacione');
+            $table->increments('id_cotizacion');
             
             $table->integer('id_estatus')->unsigned();
             $table->string('ajuste',50);

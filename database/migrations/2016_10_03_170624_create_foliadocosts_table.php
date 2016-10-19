@@ -15,7 +15,7 @@ class CreateFoliadocostsTable extends Migration
         Schema::create('costo_foliado', function (Blueprint $table) {
             $table->increments('id_costo_foliado');
 
-              $table->integer('cost_fol');
+              $table->integer('costo_fol');
             
             $table->timestamps();
         });

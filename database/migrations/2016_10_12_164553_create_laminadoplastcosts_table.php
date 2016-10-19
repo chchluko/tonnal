@@ -16,7 +16,7 @@ class CreateLaminadoplastcostsTable extends Migration
             $table->increments('cat_lam_plast_precio');
               $table->string('descrip_lamp',100);
               $table->float('costo_lamp');
-              $table->float('merma_11_22');
+              $table->float('merma_lamp');
               $table->float('minimo_lamp');
             $table->timestamps();
         });

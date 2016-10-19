@@ -139,8 +139,144 @@
                 </div>
             </div>
             {{-- Barniz --}}
-
-
+            <div class="row">
+                <div class="form-group col-xs-2">
+                    {!!Form::label('barsel1r1','Maquina')!!}
+                    {{ Form::radio('barsel1r1', '1') }}
+                    {!!Form::label('barsel1r1','Plasta')!!}
+                    {{ Form::radio('barsel1r1', '0') }}
+                </div>
+                <div class="form-group col-xs-2">
+                    {!!Form::label('barsel2r1','Mate')!!}
+                    {{ Form::radio('barsel2r1', '1') }}
+                    {!!Form::label('barsel2r1','Brillante')!!}
+                    {{ Form::radio('barsel2r1', '0') }}
+                </div>
+                <div class="form-group col-xs-3">
+                    {{ Form::checkbox('tags[]', 1) }}
+                    {{ Form::label(' Frente') }}
+                    {{ Form::checkbox('tags[]', 2) }}
+                    {{ Form::label(' Vuelta') }}
+                </div>
+                <div class="form-group col-xs-3">
+                    {{ Form::checkbox('tags[]', 3) }}
+                    {{ Form::label(' UV Registro Brillante') }}
+                </div>
+                <div class="form-group col-xs-2">
+                    {{ Form::checkbox('tags[]', 4) }}
+                    {{ Form::label(' Frente') }}
+                    {{ Form::checkbox('tags[]', 5) }}
+                    {{ Form::label(' Vuelta') }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-xs-2">
+                    {!!Form::label('barsel1r1','Maquina')!!}
+                    {{ Form::radio('barsel1r1', '1') }}
+                    {!!Form::label('barsel1r1','Plasta')!!}
+                    {{ Form::radio('barsel1r1', '0') }}
+                </div>
+                <div class="form-group col-xs-2">
+                    {!!Form::label('barsel2r1','Mate')!!}
+                    {{ Form::radio('barsel2r1', '1') }}
+                    {!!Form::label('barsel2r1','Brillante')!!}
+                    {{ Form::radio('barsel2r1', '0') }}
+                </div>
+                <div class="form-group col-xs-3">
+                    {{ Form::checkbox('tags[]', 1) }}
+                    {{ Form::label(' Frente') }}
+                    {{ Form::checkbox('tags[]', 2) }}
+                    {{ Form::label(' Vuelta') }}
+                </div>
+                <div class="form-group col-xs-3">
+                    {{ Form::checkbox('tags[]', 3) }}
+                    {{ Form::label(' UV Registro Brillante') }}
+                </div>
+                <div class="form-group col-xs-2">
+                    {{ Form::checkbox('tags[]', 4) }}
+                    {{ Form::label(' Frente') }}
+                    {{ Form::checkbox('tags[]', 5) }}
+                    {{ Form::label(' Vuelta') }}
+                </div>
+            </div>
+            {{-- Laminado Plastico --}}
+            <div class="row">
+                <div class="form-group col-xs-8">
+                    {!!Form::label('barsel1r1','Plastificado')!!}
+                    {{ Form::radio('barsel1r1', '1') }}
+                    {!!Form::label('barsel2r1','Texturizado')!!}
+                    {{ Form::radio('barsel2r1', '1') }}
+                    {!!Form::label('barsel2r1','Termico')!!}
+                    {{ Form::radio('barsel2r1', '0') }}
+                    {!!Form::label('barsel1r1','Metalizado')!!}
+                    {{ Form::radio('barsel1r1', '1') }}
+                    {!!Form::label('barsel2r1','Mate')!!}
+                    {{ Form::radio('barsel2r1', '1') }}
+                    {!!Form::label('barsel2r1','Brillante')!!}
+                    {{ Form::radio('barsel2r1', '0') }}
+                </div>
+                <div class="form-group col-xs-4">
+                    {{ Form::checkbox('tags[]', 4) }}
+                    {{ Form::label(' Frente') }}
+                    {{ Form::checkbox('tags[]', 5) }}
+                    {{ Form::label(' Vuelta') }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-xs-8">
+                    {!!Form::label('barsel1r1','Plastificado')!!}
+                    {{ Form::radio('barsel1r1', '1') }}
+                    {!!Form::label('barsel2r1','Texturizado')!!}
+                    {{ Form::radio('barsel2r1', '1') }}
+                    {!!Form::label('barsel2r1','Termico')!!}
+                    {{ Form::radio('barsel2r1', '0') }}
+                    {!!Form::label('barsel1r1','Metalizado')!!}
+                    {{ Form::radio('barsel1r1', '1') }}
+                    {!!Form::label('barsel2r1','Mate')!!}
+                    {{ Form::radio('barsel2r1', '1') }}
+                    {!!Form::label('barsel2r1','Brillante')!!}
+                    {{ Form::radio('barsel2r1', '0') }}
+                </div>
+                <div class="form-group col-xs-4">
+                    {{ Form::checkbox('tags[]', 4) }}
+                    {{ Form::label(' Frente') }}
+                    {{ Form::checkbox('tags[]', 5) }}
+                    {{ Form::label(' Vuelta') }}
+                </div>
+            </div>
+            {{-- Acabado --}}
+            <div class="row">
+                <div class="form-group col-xs-12">
+                    {{ Form::checkbox('tags[]', 4) }}
+                    {{ Form::label(' Corte y doblez') }}
+                    {{ Form::checkbox('tags[]', 5) }}
+                    {{ Form::label(' Corte') }}
+                    {{ Form::checkbox('tags[]', 4) }}
+                    {{ Form::label(' Montado') }}
+                    {{ Form::checkbox('tags[]', 5) }}
+                    {{ Form::label(' Grabado') }}
+                    {{ Form::checkbox('tags[]', 4) }}
+                    {{ Form::label(' Foliado') }}
+                    {{ Form::checkbox('tags[]', 5) }}
+                    {{ Form::label(' 1') }}
+                    {{ Form::checkbox('tags[]', 5) }}
+                    {{ Form::label(' 2') }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-xs-4">
+                    {!! Form::label('acabadoe ','Acabado Especial:') !!}
+                    {!! Form::text('acabadoe ',null,['class'=>'form-control','placeholder'=>'','required']) !!}
+                </div>
+                <div class="form-group col-xs-4">
+                    {!! Form::label('costo ','Costo:') !!}
+                    {!! Form::text('costo ',null,['class'=>'form-control','placeholder'=>'','required']) !!}
+                </div>
+                <div class="form-group col-xs-4">
+                    {{ Form::checkbox('pleca', 1) }}
+                    {{ Form::label(' Pleca') }}
+                </div> 
+            </div>
             <div class="form-group">
                 {!!Form::submit('Registrar',['class'=>'btn btn-primary'])!!}
                 {!! link_to(URL::previous(), 'Cancel', ['class' => 'btn btn-default']) !!}
