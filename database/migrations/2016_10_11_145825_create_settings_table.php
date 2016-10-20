@@ -13,7 +13,7 @@ class CreateSettingsTable extends Migration
     public function up()
     {
         Schema::create('ajustes', function (Blueprint $table) {
-            $table->increments('id_ajustes');
+            $table->increments('id_ajuste');
             $table->float('descuento');
             $table->float('comision');
             $table->timestamps();

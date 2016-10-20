@@ -21,7 +21,7 @@
         <div class="row">
             {{-- Dimensiones --}}
             <div class="form-group col-xs-3">
-                {!! Form::label('base_ex','Base Extendidad') !!}
+                {!! Form::label('base_ex','Base Extendida') !!}
                 {!! Form::text('base_ex',null,['class'=>'form-control','placeholder'=>'centimetros','required']) !!}
             </div>
             <div class="form-group col-xs-3">
@@ -105,6 +105,8 @@
             </div>
             {{-- Tintas --}}
             <div class="row">
+            <fieldset>
+                <legend>Tintas</legend>
                 <div class="form-group col-xs-3">
                     {!!Form::label('fr1','Frente 1:')!!}
                     {!!Form::select('fr1',[''=>' ','1'=>'1','2'=>'2','3'=>'3','4'=>'4'],['class'=>'form-control'])!!}
@@ -137,9 +139,12 @@
                     {!!Form::label('vu4','Vuelta 4:')!!}
                     {!!Form::select('vu4',['1'=>'0','2'=>'1','3'=>'2','4'=>'3','5'=>'4'],['class'=>'form-control'])!!}
                 </div>
+                </fieldset>
             </div>
             {{-- Barniz --}}
             <div class="row">
+            <fieldset>
+                <legend>Barniz</legend>
                 <div class="form-group col-xs-2">
                     {!!Form::label('barsel1r1','Maquina')!!}
                     {{ Form::radio('barsel1r1', '1') }}
@@ -198,9 +203,12 @@
                     {{ Form::checkbox('tags[]', 5) }}
                     {{ Form::label(' Vuelta') }}
                 </div>
+            </fieldset>
             </div>
             {{-- Laminado Plastico --}}
             <div class="row">
+            <fieldset>
+                <legend>Laminado Plastico</legend>
                 <div class="form-group col-xs-8">
                     {!!Form::label('barsel1r1','Plastificado')!!}
                     {{ Form::radio('barsel1r1', '1') }}
@@ -243,9 +251,12 @@
                     {{ Form::checkbox('tags[]', 5) }}
                     {{ Form::label(' Vuelta') }}
                 </div>
+            </fieldset>
             </div>
             {{-- Acabado --}}
             <div class="row">
+            <fieldset>
+                <legend>Acabado</legend>
                 <div class="form-group col-xs-12">
                     {{ Form::checkbox('tags[]', 4) }}
                     {{ Form::label(' Corte y doblez') }}
@@ -262,21 +273,30 @@
                     {{ Form::checkbox('tags[]', 5) }}
                     {{ Form::label(' 2') }}
                 </div>
+            </fieldset>
             </div>
+            {{-- Extra --}}
             <div class="row">
-                <div class="form-group col-xs-4">
+            <fieldset>
+                <legend>Extra</legend>
+                <div class="form-group col-xs-3">
                     {!! Form::label('acabadoe ','Acabado Especial:') !!}
                     {!! Form::text('acabadoe ',null,['class'=>'form-control','placeholder'=>'','required']) !!}
                 </div>
-                <div class="form-group col-xs-4">
+                <div class="form-group col-xs-3">
                     {!! Form::label('costo ','Costo:') !!}
                     {!! Form::text('costo ',null,['class'=>'form-control','placeholder'=>'','required']) !!}
                 </div>
-                <div class="form-group col-xs-4">
+                <div class="form-group col-xs-3">
                     {{ Form::checkbox('pleca', 1) }}
                     {{ Form::label(' Pleca') }}
-                </div> 
-            </div>
+                </div>
+                <div class="form-group col-xs-3">
+                    {{ Form::checkbox('sueja', 1) }}
+                    {{ Form::label(' Suaje') }}
+                </div>
+            </fieldset>
+            </div>    
             <div class="form-group">
                 {!!Form::submit('Registrar',['class'=>'btn btn-primary'])!!}
                 {!! link_to(URL::previous(), 'Cancel', ['class' => 'btn btn-default']) !!}
